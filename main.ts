@@ -126,40 +126,40 @@ scene.setBackgroundImage(img`
 let Ross = sprites.create(img`
     . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
-    . . . . d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d . . . . 
-    . . . . d d d d d d d d d d d d d d f f f d d d d d d d d d d d d d d d d . . . . 
-    . . . . d d d d d d d d d d d d d f 7 7 7 f d d d d d d d d d d d d d d d . . . . 
-    . . . . d d d d d d d f f f d d d f 7 f 7 f d d d d d d d d d d d d d d d . . . . 
-    . . . . d d d d d d f 7 7 7 f d d f 7 f 7 f d d d d d d d d d d d d d d d . . . . 
-    . . . . d d d d d d f 7 f 7 f f f f f f f f f f f f d d d d d d d d d d d . . . . 
-    . . . . d d d d d d f 7 f f f 7 7 7 7 7 7 7 7 7 7 7 f f d d d d d d d d d . . . . 
-    . . . . d d d d d d d f f 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 f d d d d d d d d . . . . 
-    . . . . d d d d d d d f 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 f d d d d d d d . . . . 
-    . . . . d d d d d d f 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 f d d d d d d . . . . 
-    . . . . d d d d d f 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 f d d d d d . . . . 
-    . . . . d d d d f 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 f d d d d . . . . 
-    . . . . d d d d f 7 7 f f f f 7 7 7 7 7 7 7 7 7 7 7 f f f f 7 7 f d d d d . . . . 
-    . . . . d d d f 7 7 f 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 f 7 7 f d d d . . . . 
-    . . . . d d d f 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 f d d d . . . . 
-    . . . . d d d f 7 7 7 1 1 1 1 7 7 f f f f f f f 7 7 1 1 1 1 7 7 7 f d d d . . . . 
-    . . . . d d d f 7 7 1 1 1 1 1 1 f 7 7 7 7 7 7 7 f 1 1 1 1 1 1 7 7 f d d d . . . . 
-    . . . . d d d f 7 7 1 1 f f 1 1 f 7 f f 7 f f 7 f 1 1 f f 1 1 7 7 f d d d . . . . 
-    . . . . d d d f 7 7 1 1 f f 1 1 f 7 f f 7 f f 7 f 1 1 f f 1 1 7 7 f d d d . . . . 
-    . . . . d d d f 7 7 1 1 1 1 1 1 f 7 f f 7 f f 7 f 1 1 1 1 1 1 7 7 f d d d . . . . 
-    . . . . d d d f 7 7 1 1 1 1 1 1 f 7 f f 7 f f 7 f 1 1 1 1 1 1 7 7 f d d d . . . . 
-    . . . . d d d f 7 7 7 1 1 1 1 7 f 7 f f 7 f f 7 f 7 1 1 1 1 7 7 7 f d d d . . . . 
-    . . . . d d d f 7 7 7 7 7 7 7 7 f 7 7 7 7 7 7 7 f 7 7 7 7 7 7 7 7 f d d d . . . . 
-    . . . . d d d f 7 7 7 7 7 7 7 7 7 f f f f f f f 7 7 7 7 7 7 7 7 7 f d d d . . . . 
-    . . . . d d d d f 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 f d d d d . . . . 
-    . . . . d d d d f 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 f d d d d . . . . 
-    . . . . d d d d d f 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 f d d d d d . . . . 
-    . . . . d d d d d d f 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 f d d d d d d . . . . 
-    . . . . d d d d d d d f 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 f d d d d d d d . . . . 
-    . . . . d d d d d d d d f 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 f d d d d d d d d . . . . 
-    . . . . d d d d d d d d d f f 7 7 7 7 7 7 7 7 7 7 7 f f d d d d d d d d d . . . . 
-    . . . . d d d d d d d d d d d f f f f f f f f f f f d d d d d d d d d d d . . . . 
-    . . . . d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d . . . . 
-    . . . . d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d . . . . 
+    . . . . . d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d . . . . . 
+    . . . . . d d d d d d d d d d d d d 7 7 7 d d d d d d d d d d d d d d d . . . . . 
+    . . . . . d d d d d d d d d d d d 7 7 7 7 7 d d d d d d d d d d d d d d . . . . . 
+    . . . . . d d d d d d 7 7 7 d d d 7 7 7 7 7 d d d d d d d d d d d d d d . . . . . 
+    . . . . . d d d d d 7 7 7 7 7 d d 7 7 7 7 7 d d d d d d d d d d d d d d . . . . . 
+    . . . . . d d d d d 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 d d d d d d d d d d . . . . . 
+    . . . . . d d d d d 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 d d d d d d d d . . . . . 
+    . . . . . d d d d d d 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 d d d d d d d . . . . . 
+    . . . . . d d d d d d 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 d d d d d d . . . . . 
+    . . . . . d d d d d 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 d d d d d . . . . . 
+    . . . . . d d d d 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 d d d d . . . . . 
+    . . . . . d d d 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 d d d . . . . . 
+    . . . . . d d d 7 7 7 f f f f 7 7 7 7 7 7 7 7 7 7 7 f f f f 7 7 7 d d d . . . . . 
+    . . . . . d d 7 7 7 f 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 f 7 7 7 d d . . . . . 
+    . . . . . d d 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 d d . . . . . 
+    . . . . . d d 7 7 7 7 1 1 1 1 7 7 f f f f f f f 7 7 1 1 1 1 7 7 7 7 d d . . . . . 
+    . . . . . d d 7 7 7 1 1 1 1 1 1 f 7 7 7 7 7 7 7 f 1 1 1 1 1 1 7 7 7 d d . . . . . 
+    . . . . . d d 7 7 7 1 1 f f 1 1 f 7 f f 7 f f 7 f 1 1 f f 1 1 7 7 7 d d . . . . . 
+    . . . . . d d 7 7 7 1 1 f f 1 1 f 7 f f 7 f f 7 f 1 1 f f 1 1 7 7 7 d d . . . . . 
+    . . . . . d d 7 7 7 1 1 1 1 1 1 f 7 f f 7 f f 7 f 1 1 1 1 1 1 7 7 7 d d . . . . . 
+    . . . . . d d 7 7 7 1 1 1 1 1 1 f 7 f f 7 f f 7 f 1 1 1 1 1 1 7 7 7 d d . . . . . 
+    . . . . . d d 7 7 7 7 1 1 1 1 7 f 7 f f 7 f f 7 f 7 1 1 1 1 7 7 7 7 d d . . . . . 
+    . . . . . d d 7 7 7 7 7 7 7 7 7 f 7 7 7 7 7 7 7 f 7 7 7 7 7 7 7 7 7 d d . . . . . 
+    . . . . . d d 7 7 7 7 7 7 7 7 7 7 f f f f f f f 7 7 7 7 7 7 7 7 7 7 d d . . . . . 
+    . . . . . d d d 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 d d d . . . . . 
+    . . . . . d d d 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 d d d . . . . . 
+    . . . . . d d d d 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 d d d d . . . . . 
+    . . . . . d d d d d 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 d d d d d . . . . . 
+    . . . . . d d d d d d 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 d d d d d d . . . . . 
+    . . . . . d d d d d d d 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 d d d d d d d . . . . . 
+    . . . . . d d d d d d d d 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 d d d d d d d d . . . . . 
+    . . . . . d d d d d d d d d d 7 7 7 7 7 7 7 7 7 7 7 d d d d d d d d d d . . . . . 
+    . . . . . d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d . . . . . 
+    . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
